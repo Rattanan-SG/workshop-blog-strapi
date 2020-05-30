@@ -54,7 +54,8 @@ export default {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
-    '@nuxtjs/apollo'
+    '@nuxtjs/apollo',
+    '@nuxtjs/markdownit'
   ],
 
   apollo: {
@@ -64,6 +65,14 @@ export default {
       }
     }
   },
+
+  markdownit: {
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    injected: true
+  },
+
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
