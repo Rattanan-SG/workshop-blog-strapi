@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 export default {
   mode: 'universal',
   /*
@@ -58,10 +60,15 @@ export default {
     '@nuxtjs/markdownit'
   ],
 
+  env: {
+    strapiBaseUri: process.env.API_URL || 'http://localhost:1337'
+  },
+
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: process.env.BACKEND_URL || 'http://localhost:1337/graphql'
+        httpEndpoint:
+          (process.env.API_URL || 'http://localhost:1337') + '/graphql'
       }
     }
   },
@@ -79,8 +86,8 @@ export default {
    */
   axios: {},
 
-  env: {
-    strapiBaseUri: process.env.API_URL || 'http://localhost:1337'
+  generate: {
+    fallback: true
   },
 
   /*

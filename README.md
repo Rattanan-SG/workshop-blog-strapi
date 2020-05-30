@@ -1,9 +1,15 @@
 # workshop-blog-strapi
 
+- [Front-end URL](https://workshop-blog-strapi.herokuapp.com)
+- [Back-end URL](https://workshop-blog-strapi.netlify.app)
+
 ## Link
 
-- https://strapi.io/blog/build-a-blog-using-nuxt-strapi-and-apollo
-- https://github.com/strapi/strapi-starter-nuxt-blog
+- [Ref. tutorial](https://strapi.io/blog/build-a-blog-using-nuxt-strapi-and-apollo) Build a blog with Nuxt (Vue.js), Strapi and Apollo
+- [Github tutorial](https://github.com/strapi/strapi-starter-nuxt-blog) strapi/strapi-starter-nuxt-blog
+- [Strapi](https://strapi.io) Back-end
+- [Nuxt.js](https://nuxtjs.org) Front-end
+- [Uikit](https://getuikit.com) CSS Framework
 
 ## Deployment
 

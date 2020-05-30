@@ -10,7 +10,15 @@
         >
           <div class="uk-card uk-card-muted">
             <div v-if="article.image" class="uk-card-media-top">
-              <img :src="api_url + article.image.url" alt="" height="100" />
+              <img
+                :src="
+                  article.image.url[0] == '/'
+                    ? api_url + article.image.url
+                    : article.image.url
+                "
+                alt=""
+                height="100"
+              />
             </div>
             <div class="uk-card-body">
               <p
@@ -35,7 +43,15 @@
           >
             <div class="uk-card uk-card-muted">
               <div v-if="article.image" class="uk-card-media-top">
-                <img :src="api_url + article.image.url" alt="" height="100" />
+                <img
+                  :src="
+                    article.image.url[0] == '/'
+                      ? api_url + article.image.url
+                      : article.image.url
+                  "
+                  alt=""
+                  height="100"
+                />
               </div>
               <div class="uk-card-body">
                 <p
